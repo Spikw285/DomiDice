@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dapl12guw4lui"]
+
+[node name="ScorePanel" type="Node2D" unique_id=1967350028]
+
+[node name="Panel" type="Panel" parent="." unique_id=486741423]
+offset_right = 227.0
+offset_bottom = 103.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=850155151]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LabelGreen" type="Label" parent="Panel/VBoxContainer" unique_id=503663899]
+layout_mode = 2
+text = "Green: 0"
+
+[node name="LabelOrange" type="Label" parent="Panel/VBoxContainer" unique_id=1867990433]
+layout_mode = 2
+text = "Orange: 0"
+
+[node name="LabelTotal" type="Label" parent="Panel/VBoxContainer" unique_id=1844299791]
+layout_mode = 2
+text = "Total: 0"
+
+[node name="LabelCombo" type="Label" parent="Panel/VBoxContainer" unique_id=1304641868]
+layout_mode = 2
+text = "Combo: -"

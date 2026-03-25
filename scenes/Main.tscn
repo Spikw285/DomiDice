@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://l5ng7s7v0yq4"]
+
+[ext_resource type="Script" uid="uid://1ce65ki8b3kn" path="res://scripts/core/game.gd" id="1_elqb8"]
+[ext_resource type="Script" uid="uid://dqaxr0jyuw1mi" path="res://scripts/core/scoring.gd" id="2_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://dapl12guw4lui" path="res://scenes/UI/ScorePanel.tscn" id="3_rarhs"]
+[ext_resource type="Script" uid="uid://dqxwfefwy1kfs" path="res://scripts/ui/score_panel.gd" id="4_rarhs"]
+
+[node name="Game" type="Node2D" unique_id=1536471954]
+script = ExtResource("1_elqb8")
+
+[node name="RollButton" type="Button" parent="." unique_id=1469718484]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 443.0
+offset_top = 522.0
+offset_right = 699.0
+offset_bottom = 650.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Throw"
+
+[node name="Scoring" type="Node2D" parent="." unique_id=2029988876]
+script = ExtResource("2_0bbpv")
+
+[node name="ScorePanel" parent="." unique_id=1967350028 instance=ExtResource("3_rarhs")]
+script = ExtResource("4_rarhs")

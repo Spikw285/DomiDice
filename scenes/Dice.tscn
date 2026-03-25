@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dlkl3xwbqienq"]
+
+[ext_resource type="Script" uid="uid://dfrft35s4xefe" path="res://scripts/core/dice.gd" id="2_1mws5"]
+[ext_resource type="Resource" uid="uid://beaeqer626gq2" path="res://data/d6_config.tres" id="2_ic6ol"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7yeca"]
+load_path = "res://.godot/imported/Dice_plastic.png-f234e446119066118af54d5327ddea6e.ctex"
+
+[node name="Dice" type="Node2D" unique_id=2078675153]
+script = ExtResource("2_1mws5")
+config = ExtResource("2_ic6ol")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1848705433]
+texture = SubResource("CompressedTexture2D_7yeca")
+region_enabled = true
+region_rect = Rect2(64, 128, 64, 64)
